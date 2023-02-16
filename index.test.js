@@ -29,28 +29,28 @@ let groups = [
 
 //console.log(getTopStudent(group));
 
-// describe("Finding top student", () => {
-//   test("Sould return correct name according to the score and date", () => {
-//     const result = "Ivan";
-//     expect(getTopStudent(groups[0])).toBe(result);
-//   });
-
-//   test("Sould return correct name according to the score and date", () => {
-//     expect(getTopStudent(groups[1])).toBe("Marina");
-//   });
-
-//   test("Sould return correct name according to the score and date", () => {
-//     const result = undefined;
-//     expect(getTopStudent(groups[2])).toBe(result);
-//   });
-// });
-
 describe("Finding top student", () => {
-  it.each([
-    [groups[0], "Ivan"],
-    [groups[1], "Marina"],
-    [groups[2], undefined],
-  ])("Testing arrays, results", (a, result) => {
-    expect(getTopStudent(a)).toBe(result);
+  test("Sould return correct name according to the score and date", () => {
+    const result = "Ivan";
+    expect(getTopStudent(groups[0])).toBe(result);
+  });
+
+  test("Sould return correct name according to the score and date", () => {
+    expect(getTopStudent(groups[1])).toBe("Marina");
+  });
+
+  test("Sould return correct name according to the score and date", () => {
+    const result = undefined;
+    expect(getTopStudent(groups[2])).toBe(result);
   });
 });
+
+// describe("Finding top student", () => {
+//   it.each([
+//     [groups[0], "Ivan"],
+//     [groups[1], "Marina"],
+//     [groups[2], undefined],
+//   ])("Testing arrays, results", (a, result) => {
+//     expect(getTopStudent(a)).toBe(result);
+//   });
+// });
